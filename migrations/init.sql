@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id SERIAL PRIMARY KEY,
+    product VARCHAR(255),
+    quantity INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
